@@ -1,0 +1,17 @@
+def check_cookies(): #Checks to see if the cookies checkbox is checked
+    if cookie_check.value:  # Enable login button if checkbox is checked
+        info("COOKIES", "We use cookies to give you the best online experience, Please let us know if you agree to all of these cookies.")
+
+        open_button.enable()
+    else:
+        open_button.disable()
+
+
+def check_terms(): #Checks to see if the  terms and conditions box is checked.
+	if terms_check.value:  # Enable signup button if checkbox is checked
+		info("Terms and Conditions for Cheemz Automotives", "Welcome to Cheemz Automotives! Please carefully review the following terms and conditions, which govern your use of our services. By using our app, you agree to these terms.									1. Eligibility must be at least 21 years old and possess a valid driver’s license, with no major endorsements.									2.Rental ProcessAll bookings are subject to availability. Confirmations will be provided through the app after successful booking.												3. Vehicle Use The rented vehicle must only be used for personal, non-commercial purposes unless otherwise agreed.								4. Insurance and Liability, Basic insurance coverage is included with all rentals, but additional protection plans may be available for purchase.																			5. Cancellations and Modifications Cancellations made more than 24 hours before the rental start date are eligible for a full refund.														6. Late ReturnsLate returns may incur additional fees. Any returns beyond the agreed return time may be charged at an hourly or daily rate.																			7. Privacy and DataBy using the app, you agree to the collection and use of your personal data in accordance with our Privacy Policy. This includes information needed to process bookings, payments, and vehicle tracking if necessary.															8. TerminationWe reserve the right to terminate or suspend your access to the app if you breach any of these terms, engage in fraudulent activity, or misuse the vehicle.																9. Changes to TermsWe reserve the right to modify these terms at any time. Any changes will be communicated through the app, and your continued use of the service after changes have been made constitutes acceptance of the revised terms.")
+			
+
+		sbtn_sign_up.enable()
+	else:
+		sbtn_sign_up.disable()
